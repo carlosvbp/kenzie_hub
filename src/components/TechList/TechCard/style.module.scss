@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 13px 18px;
+    border-radius: 4px;
+    background: var(--Grey-4);
+
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: var(--font-two);
+            font-weight: var(--font-wheigth-two);
+        }
+
+        p {
+            font-size: var(--font-three);
+            color: var(--Grey-1);
+            font-weight: var(--font-wheigth-three);
+        }
+    }
+
+    div {
+        display: flex;
+        gap: 10px;
+
+
+        button {
+            color: var(--Grey-1);
+        }
+    }
+}
+
+@media screen and (min-width: 742px) {
+
+    .cardContent {
+        flex-direction: row;
+    }
+}

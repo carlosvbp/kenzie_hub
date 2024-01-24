@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: var(--Grey-4);
+    color: var(--Grey-0);
+    gap: 20px;
+
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: var(--font-two);
+            font-weight: var(--font-wheigth-two);
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 25px;
+        border-radius: 4px;
+        background: var(--Grey-3);
+    }
+}

@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: var(--Grey-4);
+    font-family: var(--font--primary);
+
+    .header {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 15px;
+        border-bottom: 1px solid var(--Grey-3);
+
+        img {
+            width: 105px;
+        }
+
+        button {
+            color: var(--Grey-0);
+            border-radius: 4px;
+            background: var(--Grey-3);
+            height: 36px;
+            width: 75px;
+        }
+    }
+
+    .userSpace {
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+        padding: 35px 15px;
+
+        border-bottom: 1px solid var(--Grey-3);
+
+        h1 {
+            font-size: var(--font-one);
+            color: var(--Grey-0);
+            font-weight: 700;
+        }
+
+        p {
+            font-size: var(--font-three);
+            color: var(--Grey-1);
+            font-weight: var(--font-wheigth-three);
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+        padding: 40px 15px;
+
+        h2 {
+            font-size: var(--font-one);
+            color: var(--Grey-0);
+            font-weight: var(--font-wheigth-two);
+        }
+
+        h3 {
+            font-size: var(--font-two);
+            color: var(--Grey-0);
+            font-weight: var(--font-wheigth-three);
+        }
+    }
+    
+    @media screen and (min-width: 700px){
+        .header,.userSpace,main {
+            padding: 40px 15%;
+        }
+        
+        .userSpace{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
